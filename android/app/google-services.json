@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824288475828",
+    "project_id": "chatan-df862",
+    "storage_bucket": "chatan-df862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824288475828:android:be22776af3cd1a404235e1",
+        "android_client_info": {
+          "package_name": "com.example.chaten"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmP6U5DX4hW1o6Yte7KiRPPbWkVL6EZ7k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

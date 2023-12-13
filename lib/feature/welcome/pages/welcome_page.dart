@@ -1,4 +1,5 @@
 import 'package:chaten/common/extensions/customThemeExtensions.dart';
+import 'package:chaten/common/routes/routes.dart';
 import 'package:chaten/common/widgets/customElevatedButton.dart';
 import 'package:chaten/feature/welcome/pages/widgets/languageButton.dart';
 import 'package:chaten/feature/welcome/pages/widgets/privacyAndTerms.dart';
@@ -6,6 +7,12 @@ import 'package:flutter/material.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
+
+  NavigateToLoginPage(context){
+    Navigator.of(context).pushNamedAndRemoveUntil(
+      Routes.login, 
+      (route) => false);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +46,7 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
                 const PrivacyAndTerms(),
-                CustomElevatedButton(onPressed: (){},text: 'AGREE AND CONTINUE',),
+                CustomElevatedButton(onPressed: () => NavigateToLoginPage(context),text: 'AGREE AND CONTINUE',),
                 const SizedBox(
                   height: 40,
                 ),

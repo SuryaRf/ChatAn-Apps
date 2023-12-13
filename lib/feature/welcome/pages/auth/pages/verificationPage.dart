@@ -4,7 +4,9 @@ import 'package:chaten/feature/welcome/pages/auth/widget/customTextField.dart';
 import 'package:flutter/material.dart';
 
 class VerificationPage extends StatefulWidget {
-  const VerificationPage({super.key});
+  const VerificationPage({super.key, required this.verificationId, required this.phoneNumber});
+  final String verificationId;
+  final String phoneNumber;
 
   @override
   State<VerificationPage> createState() => _VerificationPageState();
